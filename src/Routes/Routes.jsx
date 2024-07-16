@@ -5,6 +5,8 @@ import {
 import Root from "../Root/Root";
 import Home from "../Home/Home/Home";
 import Contact from "../Home/Contact/Contact";
+import Register from "../Shared/Register/Register";
+import Login from "../Shared/Login/Login";
 
   export const router = createBrowserRouter([
      {
@@ -18,6 +20,14 @@ import Contact from "../Home/Contact/Contact";
         {
           path:'/contact',
           element: <Contact/>
+        },
+        {
+          path:'/login',
+          element: <Login/>
+        },
+        {
+          path:'register',
+          element: <Register/>
         }
        ]
      },
